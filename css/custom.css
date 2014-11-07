@@ -196,8 +196,8 @@ custom stuff
 
 /* slide up and down animations */
 .animated { 
-    -webkit-animation-duration: 1s; 
-    animation-duration: 1s; 
+    -webkit-animation-duration: .9s; 
+    animation-duration: .9s; 
     -webkit-animation-fill-mode: both; 
     animation-fill-mode: both; 
     -webkit-animation-timing-function: ease; 
@@ -311,7 +311,7 @@ Ripple logo font icon
 
 
 
-/* trade page */
+/* trade page placeholders */
 
 .login_top h1 {
 	text-align: center;
