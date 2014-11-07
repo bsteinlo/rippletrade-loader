@@ -167,8 +167,20 @@ custom stuff
 
 
 .site-wrapper {
-	background-color: #346AA9;
+background: #4393b8; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #4393b8 0%, #346aa9 57%, #346aa9 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#4393b8), color-stop(57%,#346aa9), color-stop(100%,#346aa9)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #4393b8 0%,#346aa9 57%,#346aa9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #4393b8 0%,#346aa9 57%,#346aa9 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #4393b8 0%,#346aa9 57%,#346aa9 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #4393b8 0%,#346aa9 57%,#346aa9 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4393b8', endColorstr='#346aa9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 	position: absolute;
+}
+
+.logo {
+	font-size: 75px;
 }
 
 
@@ -176,13 +188,12 @@ custom stuff
 	display: none;
 }
 
-.loaded{
-}
- 
+
 .throbber {
 	-webkit-animation:spin 1s linear infinite;
     -moz-animation:spin 1s linear infinite;
     animation:spin 1s linear infinite;
+    padding-right: 10px;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
@@ -200,6 +211,7 @@ custom stuff
     0% { 
         opacity: 0; 
         -webkit-transform: translateY(2000px); 
+        
     } 
     100% { 
         opacity: 1; 
@@ -245,3 +257,52 @@ custom stuff
     -webkit-animation-name: fadeOutUpBig; 
     animation-name: fadeOutUpBig; 
 }
+
+
+
+
+
+/* 
+**********************
+Ripple logo font icon
+********************** 
+*/
+
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?96421435');
+  src: url('../font/fontello.eot?96421435#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?96421435') format('woff'),
+       url('../font/fontello.ttf?96421435') format('truetype'),
+       url('../font/fontello.svg?96421435#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+     
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+ 
+}
+ 
+.icon-logo:before { content: '\e800'; } /* '' */
