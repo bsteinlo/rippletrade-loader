@@ -6,13 +6,11 @@ $(".initial").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd
 setTimeout(function() {
     $('.loading').hide();
     $('.loaded').show();     
-}, 3000);
+}, 5000);
 
 
 $(".loaded").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function() {
-	$('.bg').removeClass('blue'); 
-	$('.login_top').fadeIn(1000);  
-	$('.login_placeholder').fadeIn(1500);   
-	$('.footer_placeholder').fadeIn(2000);  
-	$('.site-wrapper').css("background", "#fff");  
+	$('.login_top').fadeIn(500);  
+	$('.login_placeholder').fadeIn(1000);   
+	$('.footer_placeholder').fadeIn(1500);  
 });
