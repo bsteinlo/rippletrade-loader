@@ -174,6 +174,7 @@ custom stuff
 .logo {
 	font-size: 100px;
 	color: #346AA9;
+	padding:0 16px 3px 0;
 }
 
 
@@ -186,8 +187,7 @@ custom stuff
 	-webkit-animation:spin 1s linear infinite;
     -moz-animation:spin 1s linear infinite;
     animation:spin 1s linear infinite;
-    padding-right: 16px;
-	padding-bottom: 3px;
+    padding:0 16px 3px 0;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
