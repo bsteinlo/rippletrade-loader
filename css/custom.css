@@ -167,14 +167,14 @@ custom stuff
 
 
 .site-wrapper {
-background: #4393b8; /* Old browsers */
-background: -moz-linear-gradient(top,  #4393b8 0%, #346aa9 61%, #346aa9 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4393b8), color-stop(61%,#346aa9), color-stop(100%,#346aa9)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #4393b8 0%,#346aa9 61%,#346aa9 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #4393b8 0%,#346aa9 61%,#346aa9 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #4393b8 0%,#346aa9 61%,#346aa9 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #4393b8 0%,#346aa9 61%,#346aa9 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4393b8', endColorstr='#346aa9',GradientType=0 ); /* IE6-9 */
+	background: #4393b8; /* Old browsers */
+	background: -moz-linear-gradient(top,  #4393b8 0%, #346aa9 61%, #346aa9 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4393b8), color-stop(61%,#346aa9), color-stop(100%,#346aa9)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #4393b8 0%,#346aa9 61%,#346aa9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #4393b8 0%,#346aa9 61%,#346aa9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #4393b8 0%,#346aa9 61%,#346aa9 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #4393b8 0%,#346aa9 61%,#346aa9 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4393b8', endColorstr='#346aa9',GradientType=0 ); /* IE6-9 */
 	position: absolute;
 }
 
@@ -187,7 +187,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4393b8', end
 	display: none;
 }
 
-
+/* spinning animation */
 .throbber {
 	-webkit-animation:spin 1s linear infinite;
     -moz-animation:spin 1s linear infinite;
@@ -199,6 +199,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4393b8', end
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
+/* slide up and down animations */
 .animated { 
     -webkit-animation-duration: 1s; 
     animation-duration: 1s; 
@@ -258,9 +259,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4393b8', end
 }
 
 
-
-
-
 /* 
 **********************
 Ripple logo font icon
@@ -305,3 +303,26 @@ Ripple logo font icon
 }
  
 .icon-logo:before { content: '\e800'; } /* '' */
+
+
+
+/* trade page */
+
+.login_top h1 {
+	text-align: center;
+}
+
+.login_top {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 30px;
+	background: #346aa9;
+	display: none;
+}
+
+.login_placeholder, .footer_placeholder {
+	display: none;
+}
+
