@@ -186,7 +186,8 @@ custom stuff
 	-webkit-animation:spin 1s linear infinite;
     -moz-animation:spin 1s linear infinite;
     animation:spin 1s linear infinite;
-    padding-right: 10px;
+    padding-right: 16px;
+	padding-bottom: 3px;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
@@ -199,13 +200,14 @@ custom stuff
     animation-duration: 1s; 
     -webkit-animation-fill-mode: both; 
     animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease; 
+    animation-timing-function: ease; 
 } 
 
 @-webkit-keyframes fadeInUpBig { 
     0% { 
         opacity: 0; 
-        -webkit-transform: translateY(2000px); 
-        
+        -webkit-transform: translateY(500px); 
     } 
     100% { 
         opacity: 1; 
@@ -215,7 +217,7 @@ custom stuff
 @keyframes fadeInUpBig { 
     0% { 
         opacity: 0; 
-        transform: translateY(2000px); 
+        transform: translateY(500px); 
     } 
     100% { 
         opacity: 1; 
@@ -227,6 +229,15 @@ custom stuff
     animation-name: fadeInUpBig; 
 }
 
+.animated2 { 
+    -webkit-animation-duration: .5s; 
+    animation-duration: .5s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-timing-function: ease-in-out; 
+    animation-timing-function: ease-in-out; 
+} 
+
 @-webkit-keyframes fadeOutUpBig { 
     0% { 
         opacity: 1; 
@@ -234,7 +245,7 @@ custom stuff
     } 
     100% { 
         opacity: 0; 
-        -webkit-transform: translateY(-2000px); 
+        -webkit-transform: translateY(-500px); 
     } 
 } 
 @keyframes fadeOutUpBig { 
@@ -244,7 +255,7 @@ custom stuff
     } 
     100% { 
         opacity: 0; 
-        transform: translateY(-2000px); 
+        transform: translateY(-500px); 
     } 
 } 
 .fadeOutUpBig { 
