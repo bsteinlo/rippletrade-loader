@@ -171,12 +171,6 @@ custom stuff
 	background-color: #fff;
 }
 
-.logo {
-	font-size: 100px;
-	color: #346AA9;
-}
-
-
 .loaded, .loading {
 	display: none;
 }
@@ -286,7 +280,6 @@ custom stuff
         -moz-transform: translateY(-500px); 
     } 
 } 
-
 .fadeOutUpBig { 
     -webkit-animation-name: fadeOutUpBig; 
     animation-name: fadeOutUpBig; 
