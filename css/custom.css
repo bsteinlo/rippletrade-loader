@@ -174,7 +174,6 @@ custom stuff
 .logo {
 	font-size: 100px;
 	color: #346AA9;
-	padding:0 16px 3px 0;
 }
 
 
@@ -182,12 +181,12 @@ custom stuff
 	display: none;
 }
 
+
 /* spinning animation */
 .throbber {
 	-webkit-animation:spin 1s linear infinite;
     -moz-animation:spin 1s linear infinite;
     animation:spin 1s linear infinite;
-    padding:0 16px 3px 0;
 }
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
@@ -198,9 +197,11 @@ custom stuff
 .animated { 
     -webkit-animation-duration: .9s; 
     animation-duration: .9s; 
+    -moz-animation-duration: .9s; 
     -webkit-animation-fill-mode: both; 
     animation-fill-mode: both; 
     -webkit-animation-timing-function: ease; 
+    -moz-animation-timing-function: ease; 
     animation-timing-function: ease; 
 } 
 
@@ -208,10 +209,12 @@ custom stuff
     0% { 
         opacity: 0; 
         -webkit-transform: translateY(500px); 
+        transform: translateY(500px); 
     } 
     100% { 
         opacity: 1; 
         -webkit-transform: translateY(0); 
+        transform: translateY(0); 
     } 
 } 
 @keyframes fadeInUpBig { 
@@ -224,17 +227,32 @@ custom stuff
         transform: translateY(0); 
     } 
 } 
+
+@-moz-keyframes fadeInUpBig { 
+    0% { 
+        opacity: 0; 
+        -moz-transform: translateY(500px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -moz-transform: translateY(0); 
+    } 
+} 
 .fadeInUpBig { 
     -webkit-animation-name: fadeInUpBig; 
     animation-name: fadeInUpBig; 
+    -moz-animation-name: fadeInUpBig; 
 }
 
 .animated2 { 
-    -webkit-animation-duration: .5s; 
+    -webkit-animation-duration: .5s;
+    -moz-animation-duration: .5s; 
     animation-duration: .5s; 
     -webkit-animation-fill-mode: both; 
+    -moz-animation-fill-mode: both;
     animation-fill-mode: both; 
-    -webkit-animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-timing-function: ease-in-out;  
     animation-timing-function: ease-in-out; 
 } 
 
@@ -258,56 +276,23 @@ custom stuff
         transform: translateY(-500px); 
     } 
 } 
+@-moz-keyframes fadeOutUpBig { 
+    0% { 
+        opacity: 1; 
+        -moz-transform: translateY(0); 
+    } 
+    100% { 
+        opacity: 0; 
+        -moz-transform: translateY(-500px); 
+    } 
+} 
+
 .fadeOutUpBig { 
     -webkit-animation-name: fadeOutUpBig; 
     animation-name: fadeOutUpBig; 
+    -moz-animation-name: fadeOutUpBig;
 }
 
-
-/* 
-**********************
-Ripple logo font icon
-********************** 
-*/
-
-@font-face {
-  font-family: 'fontello';
-  src: url('../font/fontello.eot?96421435');
-  src: url('../font/fontello.eot?96421435#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff?96421435') format('woff'),
-       url('../font/fontello.ttf?96421435') format('truetype'),
-       url('../font/fontello.svg?96421435#fontello') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
- 
- [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "fontello";
-  font-style: normal;
-  font-weight: normal;
-  speak: none;
- 
-  display: inline-block;
-  text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
- 
-  /* For safety - reset parent styles, that can break glyph codes*/
-  font-variant: normal;
-  text-transform: none;
-     
-  /* fix buttons height, for twitter bootstrap */
-  line-height: 1em;
- 
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  margin-left: .2em;
- 
-}
- 
-.icon-logo:before { content: '\e800'; } /* '' */
 
 
 
